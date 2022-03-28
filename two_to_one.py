@@ -9,13 +9,12 @@
 # longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 #
 
+
 def longest(a: str, b: str):
-    #set_a = set(a)
     set_b = set(b)
     set_b.update(set(a))
-    return sorted([el for el in set_b]) # sorted(set_b)
+    return sorted([el for el in set_b])
+
 
 def longest_str(a: str, b: str) -> str:
     return ''.join(sorted(set(a + b)))
-
-print(longest_str("aaskasjisnwunqsq", "sajqbsuwn"))
