@@ -22,3 +22,10 @@ def unique_in_order_2(iterable: str or list) -> list:
             new.append(el)
             print(new)
     return new
+
+
+
+
+print(unique_in_order('aAAABBBCCDAABBa'))
+
+

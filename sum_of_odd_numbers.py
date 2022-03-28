@@ -27,3 +27,6 @@ def row_sum_odd_numbers(n):
 
     n_row = [first_element + i for i in range(0, 2*n, 2)]
     return sum(n_row)
+
+print(row_sum_odd_numbers(13))
+

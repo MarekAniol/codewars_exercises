@@ -10,4 +10,7 @@ def solution(string, ending):
     return string.endswith(ending)
 
 
+
 result = solution("abc", "bdc")
+
+print(result)

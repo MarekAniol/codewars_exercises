@@ -17,3 +17,7 @@ def get_sum(a: int, b: int) -> int:
 
 def get_sum_2(a: int, b: int) -> int:
     return sum(range(min(a, b), max(a, b)+1))
+
+
+s = get_sum_2(-2, 4)
+print(s)

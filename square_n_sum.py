@@ -4,3 +4,6 @@
 
 def square_sum(numbers: list) -> int:
     return sum([i**2 for i in numbers])
+
+wynik = square_sum([1, 2, 2])
+print(wynik)

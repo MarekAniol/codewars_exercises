@@ -31,4 +31,4 @@ def testy(lista):
     l = sorted(el for el in lista if el%2 == 0)
     [l.insert(i, e) for i, e in enumerate(lista) if e%2]
     return l
-    
+

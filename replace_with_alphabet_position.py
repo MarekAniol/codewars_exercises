@@ -1,4 +1,3 @@
-
 # Welcome.
 #
 # In this kata you are required to, given a string, replace every letter with its position in the alphabet.
@@ -15,3 +14,7 @@
 import string
 def alphabet_position(text: str) -> str:
     return " ".join((str(string.ascii_lowercase.index(i)) for i in text.lower() if i in string.ascii_lowercase))
+
+wynik = alphabet_position("The sunset sets at twelve o' clock.")
+print(wynik)
+

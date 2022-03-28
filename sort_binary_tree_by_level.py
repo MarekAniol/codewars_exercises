@@ -50,3 +50,7 @@ def show_nods_numbers(node):
             checked.append(current.right)
 
     return node_value
+
+
+tree = Node(1, None, None)
+print(show_nods_numbers(tree))

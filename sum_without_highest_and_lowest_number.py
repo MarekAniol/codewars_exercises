@@ -18,3 +18,8 @@
 
 def sum_arr(arr):
     return 0 if arr is None else sum(sorted(arr)[1:-1])
+
+
+wynik = sum_arr(None)
+print(wynik)
+

@@ -12,3 +12,5 @@
 def xo(s):
     s = s.casefold()
     return s.count("o") == s.count("x")
+
+print(xo(""))

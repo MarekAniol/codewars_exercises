@@ -17,4 +17,5 @@ def longest(a: str, b: str):
 
 def longest_str(a: str, b: str) -> str:
     return ''.join(sorted(set(a + b)))
-    
+
+print(longest_str("aaskasjisnwunqsq", "sajqbsuwn"))

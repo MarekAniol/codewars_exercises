@@ -10,3 +10,5 @@ def square_digits(num):
         s = str(int(s)**2)
         new_str += s
     return int(new_str)
+
+print(square_digits(55))

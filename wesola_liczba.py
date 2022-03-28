@@ -4,3 +4,6 @@ def funy_number(x: int) -> int:
     x = sum(y)
     print(x)
     return funy_number(x) if x >= 10 else 1
+
+
+print(funy_number(36))
