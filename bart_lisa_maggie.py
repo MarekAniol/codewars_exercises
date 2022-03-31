@@ -21,7 +21,7 @@
 def namelist(names):
     name_list = [el["name"] for el in names ]
     print("test", ", ".join([name["name"] for name in names])[::-1])
-    return ", ".join(name_list[0:-2]) + ", " + " & ".join(name_list[-2:]) if len(names)>2 else " & ".join(name_list)
+    return ", ".join([el["name"] for el in names ][0:-2]) + ", " + " & ".join([el["name"] for el in names ][-2:]) if len(names)>2 else " & ".join([el["name"] for el in names ])
 
 print(namelist([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}, {'name': 'Tom'}, {'name': 'Anna'}, {'name': 'Jane'}]))
 print(namelist([{'name': 'Bart'}]))

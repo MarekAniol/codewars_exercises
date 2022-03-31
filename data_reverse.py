@@ -18,8 +18,8 @@
 #
 # Note: In the C and NASM languages you are given the third parameter which is the number of segment blocks.
 def data_reverse(data):
-    l = [data[i:][slice(8)] for i in range(0, len(data), 8)][::-1]
-    result = [el[j] for el in l for j in range(len(el))]
+    #l = [data[i:][slice(8)] for i in range(0, len(data), 8)][::-1]
+    result = [el[j] for el in [data[i:][slice(8)] for i in range(0, len(data), 8)][::-1] for j in range(len(el))]
     return result
 
 print(data_reverse([1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]))
